@@ -3,16 +3,9 @@
 .map-pin[data-place="2"] .map-pin-label,.map-pin[data-place="4"] .map-pin-label{position:absolute;right:calc(100% + 4px);top:7px;margin-top:0;text-align:center}
 @media(max-width:440px){.map-legend{display:none}.map-pin[data-place="2"] .map-pin-label,.map-pin[data-place="4"] .map-pin-label{right:calc(100% - 1px);top:4px}}
 
-/* Yandex Disk playback actions */
-.yandex-choices[hidden]{display:none!important}
-.yandex-choices{margin-top:23px;display:flex;flex-direction:column;align-items:center;gap:12px}
-.yandex-primary{display:inline-flex;justify-content:center;align-items:center;padding:14px 19px;min-height:46px;border-radius:50px;background:#f5f3e8;color:#193431;font-weight:850;font-size:13px;text-decoration:none;line-height:1.25;box-shadow:0 12px 32px #0002;transition:background .2s,transform .2s}
-.yandex-primary:hover{background:#d7e8d9;transform:translateY(-2px)}
-.yandex-secondary{background:transparent;border:1px solid #bbd2c7;border-radius:50px;color:#d7e8df;padding:10px 15px;font-size:11px;font-weight:750}
-.yandex-secondary:hover{background:#fff2}
-.yandex-secondary:disabled{opacity:.6;cursor:wait}
-.yandex-status{color:#b9cbc3!important;font-size:11px!important;line-height:1.5!important;margin:0!important;max-width:370px}
-@media(max-width:780px){.yandex-choices{margin-top:14px}.yandex-primary{font-size:12px;padding:12px 15px}.yandex-status{font-size:10px!important}.video-placeholder{padding:18px!important}}
 
-/* При автоматической загрузке скрытая группа кнопок появляется только при ошибке. */
-.yandex-choices[hidden]{display:none!important}
+/* A discreet fallback URL while VK iframe is shown. */
+.video-external-link[hidden]{display:none!important}
+.video-external-link{position:absolute;bottom:14px;right:22px;z-index:4;color:#e7f2e9;font-size:11px;font-weight:800;text-decoration:none;padding:7px 12px;border-radius:30px;border:1px solid #ffffff55;background:#ffffff15;transition:background .2s}
+.video-external-link:hover{background:#ffffff35}
+@media(max-width:780px){.video-external-link{right:14px;bottom:9px;font-size:10px;padding:7px 9px}}
